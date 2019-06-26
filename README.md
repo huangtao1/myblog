@@ -1,6 +1,6 @@
 # myblog
 web blog with flask and vue
 ### mbs
-The flask rest server
+使用flask restful api提供后台服务
 ### front
-The web pages
+使用vue提供前端服务
