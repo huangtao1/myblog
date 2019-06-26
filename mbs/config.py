@@ -1,5 +1,5 @@
 # -*- coding:utf-8 -*-
-# Created by huangtao@oraro.net on 2019/6/25
+# Created by mark.huang on 2019/6/25
 # 项目配置文件
 
 import os
@@ -10,8 +10,11 @@ basedir = os.path.abspath(os.path.dirname(__file__))
 class Config:
     # 根目录
     BASEDIR = basedir
+    # 自动提交,但是需要立刻取id的情况下需要commit
     SQLALCHEMY_COMMIT_ON_TEARDOWN = True
+    # 自动跟踪
     SQLALCHEMY_TRACK_MODIFICATIONS = True
+    # 记录查询
     SQLALCHEMY_RECORD_QUERIES = True
     # 研发环境
     DB_NAME = os.environ.get('DB_NAME') or 'mbs_rest'
