@@ -1,6 +1,5 @@
-#!/usr/bin/env python
 # -*- coding:utf-8 -*-
-# Created by huangtao@oraro.net on 2019/6/25
+# Created by mark.huang on 2019/6/25
 from base import create_app, db
 from flask_script import Manager, Shell
 from flask_migrate import Migrate, MigrateCommand
